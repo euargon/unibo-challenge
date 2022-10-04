@@ -1,0 +1,31 @@
+{
+    "dashboard": {
+        "title": "Selecciona una opción:",
+        "buttons": {
+            "showPost": "Ver todos los Posts",
+            "createPost": "Crear nuevo Post"
+        }
+    },
+    "posts": {
+        "select": "Usuario:",
+        "buttons": {
+            "detail": "Ir a detalle",
+            "edit": "Editar post"
+        },
+        "user-info": {
+            "title": "Usuario"
+        },
+        "comments": {
+            "title": "Comentarios",
+            "text": "Escrito por: "
+        },
+        "edit": {
+            "title": "Título del post",
+            "text": "Contenido del post"
+        },
+        "create": {
+            "title": "Título del post",
+            "text": "Contenido del post"
+        }
+    }
+}

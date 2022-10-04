@@ -1,0 +1,19 @@
+<div class="post-detail">
+    <div class="post">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.body }}</p>
+    </div>
+    <h3>{{ 'posts.user-info.title' | translate }}</h3>
+    <div class="user-info">
+        <p>{{ user.name }}</p>
+        <p>{{ user.username }}</p>
+        <p>{{ user.website }}</p>
+    </div>
+    <h3>{{ 'posts.comments.title' | translate }}</h3>
+    <div class="comments" *ngFor="let comment of postComments">
+        <p>{{ comment.body }}</p>
+        <h4>{{ 'posts.comments.text' | translate }}</h4>
+        <p>{{ comment.name }}</p>
+        <p>{{ comment.email }}</p>
+    </div>
+</div>
