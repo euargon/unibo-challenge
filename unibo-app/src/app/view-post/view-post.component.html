@@ -1,0 +1,11 @@
+
+<select id="userIds" (change)="filterUser()">
+    <option>{{ 'posts.select' | translate }}</option>
+    <option *ngFor="let user of users">{{ user }}</option>
+</select>
+<div *ngFor="let post of posts">
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.body }}</p>
+    <button (click)="goToDetail(post.id)">{{ 'posts.buttons.detail' | translate }}</button>
+    <button (click)="goToEdit(post.id)">{{ 'posts.buttons.edit' | translate }}</button>
+</div>
