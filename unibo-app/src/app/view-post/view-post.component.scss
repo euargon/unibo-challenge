@@ -1,0 +1,22 @@
+.users-filter {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+    }
+    .users-filter-text {
+        margin: 0 8px 0 0;
+    }
+}
+
+.post {
+    margin-top: 8px;
+    padding: 8px;
+    background-color: #A3E4D7;
+    border-radius: 8px;
+
+    .btn:last-child {
+        margin-left: 8px;
+    }
+}

@@ -7,6 +7,7 @@
         }
     },
     "posts": {
+        "filter": "Selecciona un usuario si quieres ver únicamente sus posts",
         "select": "Usuario:",
         "buttons": {
             "detail": "Ir a detalle",
