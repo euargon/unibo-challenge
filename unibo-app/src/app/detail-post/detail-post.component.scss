@@ -1,0 +1,14 @@
+.user-info {
+    display: flex;
+    align-items: center;
+    h3, p {
+        margin: 0 8px 0 0;
+    }
+}
+
+.comments {
+    margin-top: 8px;
+    padding: 8px;
+    background-color: #FCF3CF;
+    border-radius: 8px;
+}

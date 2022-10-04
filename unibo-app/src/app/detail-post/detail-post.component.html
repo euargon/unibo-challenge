@@ -3,11 +3,11 @@
         <h2>{{ post.title }}</h2>
         <p>{{ post.body }}</p>
     </div>
-    <h3>{{ 'posts.user-info.title' | translate }}</h3>
     <div class="user-info">
+        <h3>{{ 'posts.user-info.title' | translate }}</h3>
         <p>{{ user.name }}</p>
-        <p>{{ user.username }}</p>
-        <p>{{ user.website }}</p>
+        <p>User: {{ user.username }}</p>
+        <p>Web: {{ user.website }}</p>
     </div>
     <h3>{{ 'posts.comments.title' | translate }}</h3>
     <div class="comments" *ngFor="let comment of postComments">
