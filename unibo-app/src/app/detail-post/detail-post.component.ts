@@ -29,10 +29,16 @@ export class DetailPostComponent implements OnInit {
     this.getComments();
   }
 
+  /**
+   * Obtiene el post que corresponde a un ID específico
+   */
   public getUserPost() {
     this.uniboService.getPost(this.idPost).subscribe(post => this.post = post);
   }
 
+  /**
+   * Obtiene el usuario al que corresponde el post así como su información (cruzando por ID)
+   */
   public getUsers() {
     this.uniboService.getUsers().subscribe((response) => {
       if(response) {
@@ -46,6 +52,9 @@ export class DetailPostComponent implements OnInit {
     });
   }
 
+  /**
+   * Obtiene los comentarios que corresponden al post (cruzando por ID)
+   */
   public getComments() {
     this.uniboService.getComments().subscribe((response) => {
       if(response) {

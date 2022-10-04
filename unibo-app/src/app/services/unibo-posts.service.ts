@@ -26,6 +26,11 @@ export class UniboPostsService {
     return this.http.get(environment.api.urlComments);
   }
 
+  /**
+   * 
+   * @param idPost número de identificación de un post
+   * @returns observable con el post obtenido del servicio para un ID determinado
+   */
   public getPost(idPost: number): Observable<Post> {
     return this.http.get(environment.api.urlPosts)
       .pipe(
