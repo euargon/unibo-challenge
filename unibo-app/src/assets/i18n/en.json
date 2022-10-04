@@ -1,0 +1,32 @@
+{
+    "dashboard": {
+        "title": "Select an option:",
+        "buttons": {
+            "showPost": "View all posts",
+            "createPost": "Create new post"
+        }
+    },
+    "posts": {
+        "filter": "Choose one user if you want to see only this users' posts",
+        "select": "User:",
+        "buttons": {
+            "detail": "Detail",
+            "edit": "Edit"
+        },
+        "user-info": {
+            "title": "User"
+        },
+        "comments": {
+            "title": "Comments",
+            "text": "Author: "
+        },
+        "edit": {
+            "title": "Post title",
+            "text": "Post content"
+        },
+        "create": {
+            "title": "Post title",
+            "text": "Post content"
+        }
+    }
+}

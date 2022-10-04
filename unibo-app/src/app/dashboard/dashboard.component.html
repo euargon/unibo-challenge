@@ -1,0 +1,7 @@
+<div class="container dashboard">
+    <h1>{{ 'dashboard.title' | translate }}</h1>
+    <button class="btn btn-primary dashboard-button" (click)="navigateTo('posts')">
+        {{ 'dashboard.buttons.showPost' | translate }}</button>
+    <button class="btn btn-success dashboard-button" (click)="navigateTo('create')">
+        {{ 'dashboard.buttons.createPost' | translate }}</button>
+</div>

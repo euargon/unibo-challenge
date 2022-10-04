@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="users-filter">
+        <p class="users-filter-text">{{ 'posts.filter' | translate }}</p>
+        <select id="userIds" (change)="filterUser()">
+            <option>{{ 'posts.select' | translate }}</option>
+            <option *ngFor="let user of users">{{ user }}</option>
+        </select>
+    </div>
+    <div *ngFor="let post of posts" class="post">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.body }}</p>
+        <button class="btn btn-light" (click)="goToDetail(post.id)">{{ 'posts.buttons.detail' | translate }}</button>
+        <button class="btn btn-dark" (click)="goToEdit(post.id)">{{ 'posts.buttons.edit' | translate }}</button>
+    </div>
+</div>
+<!--
+    TODO: Cruzar el objeto de posts con el objeto de usuarios y mostrar nombres de usuario en lugar de números (id) para filtrar
+-->
