@@ -23,6 +23,9 @@ export class ViewPostComponent implements OnInit {
     this.getPostsInfo();
   }
 
+  /**
+   * Obtiene los posts del servicio y crea un array con la lista de IDs de usuario
+   */
   public getPostsInfo() {
     this.uniboService.getPosts().subscribe((response) => {
       if(response) {
@@ -37,6 +40,9 @@ export class ViewPostComponent implements OnInit {
     });
   }
 
+  /**
+   * Filtra los posts según el usuario seleccionado o muestra todos de nuevo si no se selecciona ninguno
+   */
   public filterUser() {
     let selectElement = document.getElementById('userIds') as HTMLInputElement;
     let selectValue: any = selectElement.value;
